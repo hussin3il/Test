@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مؤسسة المظلات</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #fff;
+            direction: rtl;
+            scroll-behavior: smooth;
+        }
+        header, footer {
+            background-color: #a60000;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+        }
+        nav {
+            background-color: #c30000;
+            padding: 15px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffd700;
+        }
+        .hero {
+            background: linear-gradient(90deg, #8b0000, #a60000);
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .services, .contact, .location {
+            padding: 40px 20px;
+            text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .services h2, .contact h2, .location h2 {
+            color: #a60000;
+            margin-bottom: 20px;
+        }
+        .service-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .service-item {
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            padding: 20px;
+            width: 160px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .service-item:hover {
+            transform: translateY(-5px);
+        }
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: #25D366;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            transition: background-color 0.3s;
+        }
+        .whatsapp-button:hover {
+            background-color: #1ebe57;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>توريد وتركيب أحدث أنواع المظلات</h1>
+        <p>"اسم مؤسستك هنا"</p>
+        <p>0506843608</p>
+    </header>
+
+    <nav>
+        <a href="#services">الخدمات</a>
+        <a href="#contact">اتصل بنا</a>
+        <a href="#location">الموقع</a>
+    </nav>
+
+    <div class="hero">
+        <h2>نقدم خدمات احترافية للمظلات والسواتر والمستودعات وغيرها</h2>
+    </div>
+
+    <section class="services" id="services">
+        <h2>خدماتنا</h2>
+        <div class="service-list">
+            <div class="service-item">مظلات</div>
+            <div class="service-item">لكسان</div>
+            <div class="service-item">بروجولات</div>
+            <div class="service-item">سواتر</div>
+            <div class="service-item">خيام ملكية</div>
+            <div class="service-item">بيوت شعر</div>
+            <div class="service-item">قرميد</div>
+            <div class="service-item">هناجر</div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>راسلنا</h2>
+        <a class="whatsapp-button" href="https://wa.me/966506843608" target="_blank">📞 تواصل معنا عبر واتساب</a>
+    </section>
+
+    <section class="location" id="location">
+        <h2>الموقع</h2>
+        <p>المملكة العربية السعودية - الرياض</p>
+        <iframe src="https://www.google.com/maps?q=مكة+المكرمة&output=embed" width="300" height="200" style="border:0;"></iframe>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 اسم مؤسستك هنا. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <a class="whatsapp-button" href="https://wa.me/966506843608" target="_blank">📞 تواصل معنا</a>
+</body>
+</html>
